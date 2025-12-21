@@ -1,1 +1,9 @@
-*Projet Data Mining
+# Fichiers temporaires Office
+~$*
+*.tmp
+
+
+# Système
+Desktop.ini
+.DS_Store
+
