@@ -194,9 +194,26 @@ elif choice == "📊 Dashboard Global":
                 results = df['text'].apply(lambda x: get_final_features(x, pipeline))
                 
                 st.write("Classification SVM & KMeans...")
-                df['is_stressed'] = [pipeline['svm_model'].predict(res[0])[0] for res in results]
-                df['burnout_score'] = [res[2] for res in results]
-                df['distress_score'] = [res[3] for res in results]
+                # 2. Extraction sécurisée
+                predictions = []
+                burnout_scores = []
+                
+                for res in results:
+                    pred = res[0]
+                    predictions.append(pred)
+                    
+                    
+                    if len(res) > 2:
+                        burnout_scores.append(res[2])
+                    else:
+                        
+                        burnout_scores.append(0) 
+
+                
+                df['is_stressed'] = predictions
+                df['burnout_score'] = burnout_scores
+                
+                status.update(label="✅ Analyse terminée !", state="complete")
                 
                 # Gestion temporelle
                 if 'date' not in df.columns:
