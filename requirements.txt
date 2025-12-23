@@ -1,0 +1,11 @@
+streamlit
+pandas
+numpy
+plotly
+scikit-learn
+textblob
+scipy
+spacy
+matplotlib.pyplot
+re
+pickle
