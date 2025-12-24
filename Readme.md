@@ -1,4 +1,5 @@
 # 🧠 SantéMind : Analyse Intelligente du Stress sur les Réseaux Sociaux
+***Created by : Dorra ben ghalba**
 
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
@@ -75,5 +76,5 @@ demo/ : Captures d'écran pour la documentation.
 
 ### 1. Clonage du projet
 ```bash
-git clone [https://github.com/votre-nom/SanteMind.git](https://github.com/votre-nom/SanteMind.git)
+git clone [https://github.com/github-dorra/SanteMind-Analytics.git](https://github.com/github-dorra/SanteMind-Analytics.git)
 cd SanteMind
